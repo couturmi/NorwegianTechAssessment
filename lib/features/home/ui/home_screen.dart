@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:norwegian_tech_assessment/features/home/ui/ship_details_button.dart';
 import 'package:norwegian_tech_assessment/features/ship_details/model/cruise_ship_enum.dart';
 import 'package:norwegian_tech_assessment/shared/app_bar/welcome_app_bar.dart';
+import 'package:norwegian_tech_assessment/shared/app_strings.dart';
+import 'package:norwegian_tech_assessment/shared/asset_constants.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,7 +15,7 @@ class HomeScreen extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/norwegian_background.png"),
+            image: AssetImage(AssetConstants.homeScreenBackgroundPath),
             fit: BoxFit.cover,
           ),
         ),
@@ -24,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 8.0, vertical: 24.0),
                 child: Text(
-                  "Check out our cruise options below!",
+                  AppStrings.homeScreenMessage,
                   style: Theme.of(context).textTheme.headline6,
                 ),
               ),

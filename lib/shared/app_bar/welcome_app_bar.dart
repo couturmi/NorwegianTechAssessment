@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:norwegian_tech_assessment/shared/app_strings.dart';
 
 class WelcomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const WelcomeAppBar({Key? key}) : super(key: key);
@@ -8,12 +9,12 @@ class WelcomeAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Center(
           child: Column(
-        children: const [
+        children: [
           Text(
-            "Welcome to",
-            style: TextStyle(fontSize: 14),
+            AppStrings.welcomeToPrefix,
+            style: const TextStyle(fontSize: 14),
           ),
-          Text("Norwegian Cruise Lines"),
+          Text(AppStrings.appTitle),
         ],
       )),
     );
