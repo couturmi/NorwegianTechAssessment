@@ -66,9 +66,9 @@ class MockShipDetailsViewModel extends Mock implements ShipDetailsViewModel {
 
 ShipDetails mockShipDetails() {
   return ShipDetails(
-    shipName: "MockShip",
-    inauguralDate: "2022",
-    passengerCapacity: "10000",
-    crewCount: "2000",
-  );
+      shipName: "MockShip",
+      inauguralDate: "2022",
+      passengerCapacity: "10000",
+      crewCount: "2000",
+      highlights: ["Test Highlight"]);
 }

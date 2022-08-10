@@ -42,13 +42,6 @@ void main() {
       expect(find.byType(CircularProgressIndicator), findsNothing);
       expect(find.byType(ShipDetailsErrorScreen), findsOneWidget);
       expect(find.byType(ShipDetailsScreen), findsNothing);
-
-      // Test content.
-      expect(find.text("Whoops!"), findsOneWidget);
-      expect(
-          find.text(
-              "Something happened while trying to retrieve the ship details. Try to refresh the page."),
-          findsOneWidget);
     });
 
     testWidgets("When data load is successful", (widgetTester) async {
