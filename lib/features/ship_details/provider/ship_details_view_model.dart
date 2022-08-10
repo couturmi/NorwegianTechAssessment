@@ -20,7 +20,7 @@ class ShipDetailsViewModel extends ChangeNotifier {
   })  : _errorOccurred = false,
         _shipDetailsService = shipDetailsService ?? ShipDetailsService();
 
-  void retrieveShipDetails() async {
+  Future<void> retrieveShipDetails() async {
     // Clear the current state to notify the view that new data is loading.
     _resetState();
     // Get details for the given [cruiseShip].

@@ -8,6 +8,15 @@ class ShipDetails {
   final String imagePath;
   final List<String> highlights;
 
+  ShipDetails({
+    this.shipName = "",
+    this.passengerCapacity = "",
+    this.crewCount = "",
+    this.inauguralDate = "",
+    this.imagePath = "",
+    this.highlights = const [],
+  });
+
   ShipDetails.fromJson(Map<String, dynamic> json)
       : shipName = json["shipName"] ?? "",
         passengerCapacity = json["shipFacts"]?["passengerCapacity"] ?? "",
