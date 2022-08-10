@@ -1,7 +1,7 @@
 import 'package:basic_utils/basic_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:norwegian_tech_assessment/features/ship_details/model/cruise_ship_enum.dart';
-import 'package:norwegian_tech_assessment/features/ship_details/ui/ship_details_screen.dart';
+import 'package:norwegian_tech_assessment/features/ship_details/data/cruise_ship_enum.dart';
+import 'package:norwegian_tech_assessment/features/ship_details/ui/ship_details_widget.dart';
 import 'package:norwegian_tech_assessment/shared/app_strings.dart';
 
 /// Button to navigate to a specific ship's details screen.
@@ -24,7 +24,7 @@ class ShipDetailsButton extends StatelessWidget {
         child: FittedBox(
           fit: BoxFit.fitWidth,
           child: Text(
-              "${AppStrings.shipDetailsButtonPrefix}${StringUtils.capitalize(cruiseShip.name)}"),
+              "${AppStrings.shipDetailsButtonPrefix} ${StringUtils.capitalize(cruiseShip.name)}"),
         ),
       ),
     );
@@ -35,7 +35,7 @@ class ShipDetailsButton extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-          builder: (context) => ShipDetailsScreen(cruiseShip: cruiseShip)),
+          builder: (context) => ShipDetailsWidget(cruiseShip: cruiseShip)),
     );
   }
 }

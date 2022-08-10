@@ -9,10 +9,10 @@ class WelcomeAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Center(
           child: Column(
-        children: [
+        children: const [
           Text(
             AppStrings.welcomeToPrefix,
-            style: const TextStyle(fontSize: 14),
+            style: TextStyle(fontSize: 14),
           ),
           Text(AppStrings.appTitle),
         ],

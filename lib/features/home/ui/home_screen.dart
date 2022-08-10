@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:norwegian_tech_assessment/features/home/ui/ship_details_button.dart';
-import 'package:norwegian_tech_assessment/features/ship_details/model/cruise_ship_enum.dart';
+import 'package:norwegian_tech_assessment/features/ship_details/data/cruise_ship_enum.dart';
 import 'package:norwegian_tech_assessment/shared/app_bar/welcome_app_bar.dart';
 import 'package:norwegian_tech_assessment/shared/app_strings.dart';
 import 'package:norwegian_tech_assessment/shared/asset_constants.dart';
